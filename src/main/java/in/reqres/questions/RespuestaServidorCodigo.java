@@ -10,7 +10,7 @@ public class RespuestaServidorCodigo implements Question<Integer> {
         return SerenityRest.lastResponse().statusCode();
     }
 
-    public static Question was(){
-        return new RespuestaServidorCodigo();
-    }
+    //public static Question was(){
+        //return new RespuestaServidorCodigo();
+   // }
 }

@@ -25,8 +25,8 @@ public class GetUsuarioStepDefinitions {
         Actor usuario = Actor.named("Usuario");
 
         usuario.should(
-                seeThat("el codigo de respuesta es: ",
-                        RespuestaServidorCodigo.was(),
+                seeThat("el codigo de respuesta",
+                        res-> new RespuestaServidorCodigo().answeredBy(usuario),
                         equalTo(code)
                 )
         );
